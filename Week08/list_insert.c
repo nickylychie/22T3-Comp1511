@@ -30,7 +30,7 @@ int main(void) {
     return 0;
 }
 
-// ========================= tut exercise here! ==========================
+// ======================== tut exercise here! =========================
 struct node *insert_3rd(int value, struct node *head) {
     
     // TODO
