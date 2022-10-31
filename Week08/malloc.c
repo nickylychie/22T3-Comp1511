@@ -26,7 +26,7 @@ int main(void) {
     return 0;
 }
 
-// ========================= tut exercise here! ==========================
+// ======================== tut exercise here! ========================
 struct node *create_new_node(int value) {
 
     // create a new node and return a pointer to it
