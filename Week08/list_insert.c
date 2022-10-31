@@ -32,6 +32,7 @@ int main(void) {
 
 // ======================== tut exercise here! =========================
 struct node *insert_3rd(int value, struct node *head) {
+    struct node *new_node = create_new_node(value);
     
     // TODO
     // insert new node as the 3rd element in the given list
