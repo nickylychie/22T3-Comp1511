@@ -30,14 +30,31 @@ int main(void) {
 }
 
 // ======================== tut exercise here! =========================
+// iterate through the given list
 void iterate_list(struct node *head) {
     
-    // TODO
-    // iterate through a given list
+    struct node *current = head;
+    while (current != NULL) {
+        current = current->next;
+    }
 
 }
+
 // how can you change this code to return the last node instead?
 // have you considered all the cases?
+struct node *get_last_node(struct node *head) {
+    
+    if (head == NULL) {
+        return;
+    }
+
+    struct node *current = head;
+    while (current->next != NULL) {
+        current = current->next;
+    }
+
+    return current;
+}
 
 struct node *create_new_node(int value) {
 

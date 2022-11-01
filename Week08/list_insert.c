@@ -34,11 +34,20 @@ int main(void) {
 struct node *insert_3rd(int value, struct node *head) {
     struct node *new_node = create_new_node(value);
     
-    // TODO
-    // insert new node as the 3rd element in the given list
-
-    // return the new list
-    return NULL;
+    if (head == NULL) {
+        return new_node;
+    }
+    
+    int position = 1;
+    struct node *current = head;
+    while (current->next != NULL && position < 2) {
+        current = current->next;
+        position += 1;
+    }
+    new_node->next = current->next;
+    current->next = new_node;
+    
+    return head;
 }
 
 struct node *create_new_node(int value) {

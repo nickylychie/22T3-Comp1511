@@ -29,8 +29,9 @@ int main(void) {
 // ======================== tut exercise here! ========================
 struct node *create_new_node(int value) {
 
-    // create a new node and return a pointer to it
-    
-    // needs to be changed
-    return NULL;
+    struct node *new_node = malloc(sizeof(int));
+    new_node->data = value;
+    new_node->next = NULL;
+
+    return new_node;
 }
